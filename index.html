@@ -1,1 +1,61 @@
-<!doctype html><html class="no-js" lang=""><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>yo webapp</title><link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- Place favicon.ico in the root directory --><link rel="stylesheet" href="styles/main.css"><script src="scripts/vendor/modernizr.js"></script></head><body><div class="mask"></div><div class="header"><div class="topbar"></div></div><ul class="img-list"><li><div></div><span class="textRight">伊武崎 峻</span></li><li><div></div><span class="textRight">薙切 アリス</span></li><li><div></div><span class="textRight">イサミ·アルデ ィ ーニ</span></li><li><div></div><span class="textRight">新戸緋沙子</span></li><li><div></div><span class="textLeft">丸井 善二 </span></li><li><div></div><span class="textLeft">タクミ·アルデ ィ ーニ </span></li><li><div></div><span class="textLeft">幸平 創真</span></li><li><div></div><span class="textLeft">葉山アキラ</span></li></ul><script src="scripts/vendor.js"></script><script src="scripts/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{padding: 0;margin: 0;}
+	#desk {width: 50%;float: left;}
+	.log {width: 50%;float: right;text-align: center;}
+	#p1,#p2,#p3,#p4{height: 50px;line-height: 50px;margin-bottom: 5px;}
+	.playerName,
+	.first-card,
+	.second-card, 
+	.history-card {display:block;float: left; width: 50px;height: 50px;line-height: 50px;margin-right: 5px;background-color: #cfcfcf;}
+	.history-card {width: 200px;}
+
+	.first-card {}
+	.playerArea {margin-bottom: 10px;}
+	.player-turn .first-card,.player-turn .second-card {background-color: yellow;cursor: pointer;}
+	.playerArea button,.cardArea button {padding: 10px;margin-right: 5px;}
+	.player-choose,.card-choose {background-color: yellow;}
+	</style>
+</head>
+<body>
+	<div id="desk">
+		<div id="p1" class="player">
+			<span class="playerName">玩家</span>
+			<span class="first-card handCard">底牌</span>
+			<span class="second-card handCard"></span>
+			<span class="history-card"></span>
+		</div>
+		<div id="p2" class="player">
+			<span class="playerName">玩家</span>
+			<span class="first-card handCard">底牌</span>
+			<span class="second-card handCard"></span>
+			<span class="history-card"></span>
+		</div>
+		<div id="p3" class="player">
+			<span class="playerName">玩家</span>
+			<span class="first-card handCard">底牌</span>
+			<span class="second-card handCard"></span>
+			<span class="history-card"></span>
+		</div>
+		<div id="p4" class="player">
+			<span class="playerName">玩家</span>
+			<span class="first-card handCard">底牌</span>
+			<span class="second-card handCard"></span>
+			<span class="history-card"></span>
+		</div>
+		<div class="powerArea">
+			<div class="playerArea">选择玩家：<span></span></div>
+			<div class="cardArea">选择卡牌：<span></span></div>
+		</div>
+	</div>
+	<div class="log"></div>
+	<script src="jquery.min.js"></script>
+	<script src="arr.js"></script>
+	<script src="power.js"></script>
+	<script src="love.js"></script>
+</body>
+</html>
